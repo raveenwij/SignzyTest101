@@ -7,8 +7,8 @@ exports.handler = function (event, context, callback) {
         query: {},
         headers: { "Accept": "*/*", "Content-Type": "application/json" },
         body: {
-            "password": "bhandari",
-            "userName": "niladri_bhandari@yahoo.co.in"
+            "password": event.password,
+            "userName": event.userName
         }
     }).then((response) => {
         // your code goes here
